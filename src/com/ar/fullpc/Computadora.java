@@ -15,24 +15,23 @@ public class Computadora {
 	private Raton raton;
 
 	private Computadora() {
-
+		this.idComputadora = ++Computadora.contadorComputadoras;
 	}
 
 	public Computadora(String nombre, Monitor monitor, Teclado teclado, Raton raton) {
-		super();
+		this();
 		this.nombre = nombre;
 		this.monitor = monitor;
 		this.teclado = teclado;
 		this.raton = raton;
-
-		this.idComputadora = ++Computadora.contadorComputadoras;
 
 	}
 
 	@Override
 	public String toString() {
 		return "Computadora [idComputadora=" + idComputadora + ", nombre=" + nombre + ", monitor= " + monitor.getMarca()
-				+ " tamaño_monitor= " + monitor.getTamanio() + ", teclado=" + teclado.getTipoEntrada() + ", raton=" + raton.getTipoEntrada() + "]";
+				+ " tamaño_monitor= " + monitor.getTamanio() + ", teclado=" + teclado.getTipoEntrada() + ", raton="
+				+ raton.getTipoEntrada() + "]";
 	}
 
 	public Integer getIdComputadora() {

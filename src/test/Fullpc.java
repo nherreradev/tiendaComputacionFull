@@ -27,12 +27,19 @@ public class Fullpc {
 
 		Computadora computadora2 = new Computadora("Vaio10", monitor2, teclado2, raton2);
 
-		Orden orden = new Orden();
+		Orden orden1 = new Orden();
 
-		orden.agregarComputadora(computadora);
-		orden.agregarComputadora(computadora2);
+		orden1.agregarComputadora(computadora);
+		
 
-		orden.mostrarOrden();
+		orden1.mostrarOrden();
+		
+		
+		Orden orden2 = new Orden();
+		orden2.agregarComputadora(computadora2);
+		orden2.mostrarOrden();
+		
+		
 
 	}
 

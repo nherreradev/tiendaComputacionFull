@@ -26,8 +26,9 @@ public class Orden {
 	
 	public void mostrarOrden() {
 		
+		System.out.println("Orden Nro " + this.idOrden  + "\n" );
 		for (Computadora computadora : listaComputadoras) {
-			System.out.println("Orden Nro " + this.idOrden  + "\n" +  computadora + "\n");
+			System.out.println(computadora + "\n");
 		}
 		
 	}

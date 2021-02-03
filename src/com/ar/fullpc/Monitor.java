@@ -11,7 +11,7 @@ public class Monitor {
 	private static int contadorMonitores;
 
 	private Monitor() {
-		
+		this.idMonitor = ++Monitor.contadorMonitores;
 	}
 
 	public Monitor(String marca, Double tamanio) {
@@ -19,7 +19,7 @@ public class Monitor {
 		this.marca = marca;
 		this.tamanio = tamanio;
 		
-		this.idMonitor = ++Monitor.contadorMonitores;
+		
 	}
 
 	@Override
